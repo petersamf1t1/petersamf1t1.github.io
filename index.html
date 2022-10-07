@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>SAM Portfolio</title>
+     <style>
+        .navbar{
+            display:flex;
+            align-items: center;
+            justify-content:space-between;
+            padding: 50px;
+        }
+        .navbarButtons a{
+            color: white;
+            text-decoration:none;
+            font-size: 150%;
+            font-weight: bold;
+        }
+        .cat-gradient1{
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(90deg,#8337FF 0%,#E87421 15%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bolder;
+        }
+        .cat-gradient2{
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(90deg,#1FFFF2 0%,#fad325 25%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bolder;
+        }
+        .cat-gradient3{
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(90deg,#E83F3F 0%,Blue 20%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: bolder;
+        }
+        .section-hero{
+            color: #fff;
+            margin-left: 10%;
+            font-weight: bold;
+            font-size: 200%;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        h1.heading-stroke-1st {
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: white;
+        }
+        h1.heading-stroke-2nd {
+            color: white;
+        }
+        .row {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+            flex-wrap: wrap;
+        }
+        .spacex {
+            margin-top: 80px;
+        }
+        .section-headings h1{
+            font-size: 500%;
+            
+        }
+        .tech-icon-img{
+            font-family: 'Inter', sans-serif;
+            cursor: default;
+            width:fit-content;
+            height: 75px;
+            object-fit: contain;
+            color: white;
+        }
+        
+     </style>
+ </head>
+ <!--
+    background: linear-gradient( 90deg, darkblue,darkgreen,darkmagenta,darkorange,darkred,darkslateblue,darkturquoise,aqua,chartreuse,chocolate,cornflowerblue,blueviolet,Cyan,Violet,Indigo,Blue,Green,Yellow,Orange,Red); color: white;
+ -->
+  <body style="background-color:black;">
+        <nav class="navbar">
+            <img src="images/tenor.gif" alt="sam logo" width="10%" style="border-radius: 10%;">
+            <div class="navbarButtons">
+                <a href="#home" class="nav-link nav-link-active">HOME </a> &nbsp;&nbsp;
+                <a href="#portfolio" class="nav-link"> WORK </a> &nbsp;&nbsp;
+                <a href="#about" class="nav-link"> ABOUT </a> &nbsp;&nbsp;
+                <a href="#contact" class="nav-link"> CONTACT </a> &nbsp;&nbsp;
+                <a href="https://dhruvilxcode.hashnode.dev/" class="nav-link" target="_blank"> BLOG </a>
+            </div>
+        </nav>
+        <div class="section-hero" id="home">
+            <h1>Hi 👋🏻 I'm sam</h1>
+            <h1>I MAKE</h1>
+            <h1 class="cat-gradient1">APPS</h1>
+            <h1 class="cat-gradient2">WEBSITE</h1>
+            <h1 class="cat-gradient3">UI/UX</h1>
+        </div>
+<!-- section: technologies -->
+        <div style="margin-top: 15%; text-align: center;" id="tech">
+            <div class="section-headings">
+                <h1 class="heading-stroke-1st">TECHNOLOGIES</h1>
+                <h1 class="heading-stroke-2nd">WE USE</h1>
+            </div>
+            <div class="row">
+                <div ><img class="tech-icon-img" src="./assets/icons/react.svg" alt="img"></div>
+                <div ><img class="tech-icon-img" src="./assets/icons/vue.svg" alt="img"></div>
+                <div ><img class="tech-icon-img" src="./assets/icons/html.svg" alt="img"></div>
+                <div ><img class="tech-icon-img" src="./assets/icons/css.svg" alt="img"></div>
+                <div ><img class="tech-icon-img" src="./assets/icons/javascript.svg" alt="img"></div>
+                <div ><img class="tech-icon-img" src="./assets/icons/flutter.svg" alt="img"></div>
+           <!-- <div ><img class="tech-icon-img" src="./assets/icons/react_native.svg" alt="img"></div> -->
+                <div class="col"><img class="tech-icon-img" src="./assets/icons/electron.svg" alt="img"></div>
+            </div>
+            <div class="row spacex">
+                <div ><img class="tech-icon-img" src="./assets/icons/nextjs.svg" alt="img" class="tech-icon-img"></div>
+                <div ><img class="tech-icon-img" src="./assets/icons/nuxtjs.svg" alt="img" class="tech-icon-img"></div>
+                <div ><img class="tech-icon-img" src="./assets/icons/nodejs.svg" alt="img" class="tech-icon-img"></div>
+            </div>
+            <div class="row spacex">
+                <div ><img class="tech-icon-img" src="./assets/icons/tailwind.svg" alt="img"></div>
+            </div>
+    
+            <div class="row spacex">
+                <div class="tech-icon-img"><img src="./assets/icons/postgresql.svg" alt="img" class="tech-icon-img"></div> 
+                <div class="tech-icon-img"><img src="./assets/icons/mongodb.svg" alt="img" class="tech-icon-img"></div>
+                <div class="tech-icon-img"><img src="./assets/icons/oracle.svg" alt="img" class="tech-icon-img"></div> 
+            </div>
+    
+            <div class="row spacex">
+                <div class="tech-icon-img"><img src="./assets/icons/aws.svg" alt="img" class="tech-icon-img"></div>
+                <div class="tech-icon-img"><img src="./assets/icons/googlecloud.svg" alt="img" class="tech-icon-img"></div>
+                <div class="tech-icon-img"><img src="./assets/icons/firebase.svg" alt="img" class="tech-icon-img"></div>
+            </div>
+    
+            <div class="row spacex">
+                <div class="tech-icon-img"><img src="./assets/icons/sketch.svg" alt="img" class="tech-icon-img"></div>
+                <div class="tech-icon-img"><img src="./assets/icons/figma.svg" alt="img" class="tech-icon-img"></div>
+            </div>
+    
+            <div class="row spacex">
+                <div class="tech-icon-img"><img src="./assets/icons/xd.svg" alt="img" class="tech-icon-img"></div>
+                <div class="tech-icon-img"><img src="./assets/icons/photoshop.svg" alt="img" class="tech-icon-img"></div>
+                <div class="tech-icon-img"><img src="./assets/icons/illustrator.svg" alt="img" class="tech-icon-img"></div>
+                <div class="tech-icon-img"><img src="./assets/icons/premierepro.svg" alt="img" class="tech-icon-img"></div>
+                <div class="tech-icon-img"><img src="./assets/icons/indesign.svg" alt="img" class="tech-icon-img"></div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+  </body>			
+</html>
