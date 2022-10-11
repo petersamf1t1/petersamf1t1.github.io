@@ -2,130 +2,8 @@
 <html lang="en">
  <head>
      <title>SAM Portfolio</title>
-     <style>
-        #homeCLR{
-            color: orangered;
-        }
-        .navbar{
-            display:flex;
-            align-items: center;
-            justify-content:space-between;
-            padding: 50px;
-        }
-        .navbarButtons a{
-            color: white;
-            text-decoration:none;
-            font-size: 150%;
-            font-weight: bold;
-            
-        }
-        a.nav-link:hover {
-            color: rgb(0, 247, 255);
-            font-size: 200%;
-        }
-        a.nav-link-blog:hover {
-            color: rgb(9, 255, 0);
-            font-size: 200%;
-            text-decoration:underline;
-            
-        }
-        .cat-gradient1{
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(90deg,#8337FF 0%,#E87421 15%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: bolder;
-        }
-        .cat-gradient2{
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(90deg,#1FFFF2 0%,#fad325 25%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: bolder;
-        }
-        .cat-gradient3{
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(90deg,#E83F3F 0%,Blue 15%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-weight: bolder;
-        }
-        .section-hero{
-            color: #fff;
-            margin-left: 10%;
-            margin-top: 10%;
-            font-weight: bold;
-            font-size: 200%;
-            font-family:Georgia, 'Times New Roman', Times, serif;
-        }
-        h1.heading-stroke-1st {
-            -webkit-text-stroke-width: 2px;
-            -webkit-text-stroke-color: white;
-        }
-        h1.heading-stroke-2nd {
-            color: white;
-        }
-        .row {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 5%;
-            flex-wrap: wrap;
-            color: white;
-        }
-        .spacex {
-            margin-top: 80px;
-        }
-        .section-headings h1{
-            font-size: 500%;
-        }
-        .tech-icon-img{
-            font-family: 'Inter', sans-serif;
-            cursor: default;
-            width:fit-content;
-            height: 75px;
-            object-fit: contain;
-            color: white;
-        }
-        .work-icon-img{
-            font-family: 'Inter', sans-serif;
-            cursor: default;
-            width:fit-content;
-            height: 200px;
-            object-fit: contain;
-            color: white;
-            border-radius: 5%;
-        }
-        .worklink a{
-            color: white;
-            font-size: 130%;
-            text-decoration:none;
-        }
-        .worklink a:hover{
-            color: #09ff00;
-            font-size: 125%;
-
-        }
-        .section-about {
-            margin-top: 250px;
-            text-align: center;
-        }
-        .section-about-details {
-            display: flex;
-            padding: 0px 80px;
-            align-items: center;
-        }
-        .section-about-image {
-            margin: 0.1%,10%;
-        }
-        .section-about-texts {
-            text-align:center;
-            color: white;
-            font-size: 150%;
-            font-weight: bold;
-            margin-right: 10%;
-        }
-     </style>
+     <link rel="icon" href="images/tenor.gif">
+     <link rel="stylesheet" href="style.css">
  </head>
  <!--
     background: linear-gradient( 90deg, darkblue,darkgreen,darkmagenta,darkorange,darkred,darkslateblue,darkturquoise,aqua,chartreuse,chocolate,cornflowerblue,blueviolet,Cyan,Violet,Indigo,Blue,Green,Yellow,Orange,Red); color: white;
@@ -136,7 +14,7 @@
             <div class="navbarButtons">
                 <a href="#home" class="nav-link" id="homeCLR">HOME </a> &nbsp;&nbsp;
                 <a href="#tech" class="nav-link"> TECH </a> &nbsp;&nbsp;
-                <a href="#portfolio" class="nav-link"> WORK </a> &nbsp;&nbsp;
+                <a href="#work" class="nav-link"> WORK </a> &nbsp;&nbsp;
                 <a href="#about" class="nav-link"> ABOUT </a> &nbsp;&nbsp;
                 <a href="#contact" class="nav-link"> CONTACT </a> &nbsp;&nbsp;
                 <a href="https://petersamf1t1.github.io/" class="nav-link-blog"> BLOG </a>
@@ -144,6 +22,7 @@
         </nav>
 <!-- section: home -->
         <div class="section-hero" id="home">
+            <!--section Home heading-->
             <h1>Hi 👋🏻 I'm sam</h1>
             <h1>I MAKE</h1>
             <h1 class="cat-gradient1">APPS</h1>
@@ -152,6 +31,7 @@
         </div>
 <!-- section: technologies -->
         <div style="margin-top: 15%; text-align: center;" id="tech">
+            <!--section technology heading-->
             <div class="section-headings">
                 <h1 class="heading-stroke-1st">TECHNOLOGIES</h1>
                 <h1 class="heading-stroke-2nd">WE USE</h1>
@@ -203,26 +83,27 @@
             </div>
         </div>
 <!-- section: work -->
-        <div style="margin-top: 15%; text-align: center;" id="portfolio">
+        <div style="margin-top: 15%; text-align: center;" id="work">
+            <!--section work heading-->
             <div class="section-headings">
                 <h1 class="heading-stroke-1st">WORK</h1>
                 <h1 class="heading-stroke-2nd">PORTFOLIO</h1>
             </div>
             <div class="row , worklink">
                 <div >
-                    <a href=".">
+                    <a href="./assets/frontend/index.html" class="work-card">
                         <img class="work-icon-img" src="./assets/frontend.png" alt="img" >
                         <h3>FRONTEND DEVELOPEMENT</h3>
                     </a>
                 </div>
                 <div >
-                    <a href=".">
+                    <a href="./assets/middleware/index.html">
                         <img class="work-icon-img" src="./assets/middleware.png" alt="img" >
                         <h3>MIDDLEWARE DEVELOPEMENT</h3>
                     </a>
                 </div>
                 <div >
-                    <a href=".">
+                    <a href="./assets/backend/index.html">
                         <img class="work-icon-img" src="./assets/backend.png" alt="img" >
                         <h3>BACKEND DEVELOPEMENT</h3>
                     </a>
@@ -231,15 +112,18 @@
         </div>
 <!-- section: about -->
         <div style="margin-top: 15%; text-align: center;" id="about" class="section-about">
+            <!--section about heading-->
             <div class="section-headings">
                 <h1 class="heading-stroke-1st">ABOUT</h1>
                 <h1 class="heading-stroke-2nd">ME</h1>
             </div>
-            <!--section about details (image+texts)-->
+            <!--section about details (container)-->
             <div class="section-about-details">
+                <!--section about details images-->
                 <div class="section-about-image">
                     <img src="./assets/me.png" alt="userImage" width="130%">
                 </div>
+                <!--section about details texts-->
                 <div class="section-about-texts">
                     <p>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hi there 👋🏻, My name is <b>SAM</b>, I am a Full Stack JAVA Developer. I Create WebAPPS & Software and Design Mobile Apps,
@@ -252,11 +136,34 @@
         </div>
 <!-- section: contact -->
         <div style="margin-top: 15%; text-align: center;" id="contact">
+            <!--section contact heading-->
             <div class="section-headings">
                 <h1 class="heading-stroke-1st">LET'S</h1>
                 <h1 class="heading-stroke-2nd">BUILD</h1>
             </div>
-
+            <!--section contact details-->
+            <div class="section-contact-links">
+                <a class="contact-link" href="mailto:petersamf1@gmail.com">
+                    <img src="./assets/icons/mail.svg" alt="iconMail">
+                     &nbsp;&nbsp; petersamf1@gmail.com 
+                </a>
+                <a class="contact-link" href="tel:+19292991069">
+                    <img src="./assets/icons/call.svg" alt="iconCall">
+                    &nbsp;&nbsp;+1 929 299 1069 
+                </a>
+                <a class="contact-link" href="http://maps.google.com/">
+                    <img src="./assets/icons/location.svg" alt="iconLocation">
+                    &nbsp;&nbsp; Hyderabad, India. 
+                </a>
+            </div>
         </div>
+<!-- section: footer -->
+        <footer class="footer">
+            <img src="images/tenor.gif" alt="sam logo" width="7%" style="border-radius: 10%;">
+            <p>&copy; Copyright by SAM <span>2022</span></p>
+            <a href="https://petersamf1t1.github.io/" >
+                <img src="./assets/icons/github.svg" alt="github" width="300%" >
+            </a>
+        </footer>
   </body>			
 </html>
