@@ -1,0 +1,26 @@
+body{
+    background: linear-gradient( 135deg,darkturquoise,aqua,chartreuse,cornflowerblue,blueviolet,Cyan,Violet); color: white;
+}
+h1{
+    font-size: 500%;
+    font-weight: bolder;
+    color: black;
+}
+h2{
+    font-size: 350%;
+    font-weight: bolder;
+}
+h3{
+    font-size: 300%;
+    font-weight: bolder;
+    border: 2px solid #f700ff;
+}
+a{
+    text-decoration: none;
+    color: #ff7b00;
+}
+h3:hover{
+    font-size: 300%;
+    font-weight: bolder;
+    color: #092dfa;
+}
