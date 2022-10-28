@@ -1,5 +1,4 @@
 #main-heading{
-        
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     line-height:1em;
     color:orange;
@@ -11,7 +10,6 @@
     height: 300px;
     border-radius: 5%;
     align-items: center;
-    
 }
 .tabrowcol{
     justify-content:space-around;
