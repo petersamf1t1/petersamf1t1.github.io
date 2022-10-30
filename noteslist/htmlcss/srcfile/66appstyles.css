@@ -1,0 +1,42 @@
+
+/* application styles (appstyles.css) */
+#left-div{
+	float:left;
+}
+#right-div{
+	float:right;
+}
+header{
+	background:#ffffcc;
+	font-size:20px;
+    padding-left:50px;
+    padding-right:50px;
+}
+nav{
+	height:24px;
+	background:#3300ff;
+	padding:0;
+	text-align:center;
+}
+nav  a{
+	color:white;
+	font-size:22px;
+	text-decoration:none;
+	width:130px;
+	display:inline-block;
+}
+nav a:hover{
+	background:red;
+}
+iframe {
+	width:95%;
+    height:600px;
+	background:#ff99ff;
+}
+footer{
+	background:#3300ff;
+	color:white;
+	font-size:20px;
+	display:flex;
+	justify-content:space-around;
+}

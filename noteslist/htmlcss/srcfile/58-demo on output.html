@@ -1,0 +1,27 @@
+<!--examples on  output tag -->
+<!DOCTYPE html>
+<html lang="en">	
+  <head>
+	<title>Ex58</title>
+	<link rel="icon" href="logo.png"/>
+   </head>	 
+  <body>  
+	<h3>demo on output </h3>
+	<output>Hello world</output>
+	<br>
+<!-- <button onclick="document.write('button clicked')">click here</button>	OR -->
+
+	<button onclick="res.value='button clicked'">click here</button> 	   
+	<output id="res"></output>
+	<br>		<br>
+
+	<input type="text" id="tb1" placeholder="First number"/> <br>
+	<input type="text" id="tb2" placeholder="Second number"/> <br>
+	<button onclick="result.value=tb1.value-tb2.value"> - </button>
+	<button onclick="result.value=tb1.value*tb2.value"> * </button>
+	<button onclick="result.value=tb1.value/tb2.value"> / </button>
+	<button onclick="result.value=tb1.value%tb2.value"> % </button>
+	<br> <br>
+	<output id="result"></output> 		 
+  </body>
+</html>

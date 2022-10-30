@@ -1,0 +1,45 @@
+<!--  example on "input" tag -->   
+<!DOCTYPE html>
+<html lang="en"> 
+ <head>
+     <title>Ex42</title>
+     <link rel="icon" href="logo.png"/>
+		<style>
+			div{
+				width:200px;
+				height:300px;
+				background:cyan;
+				margin:auto;  /* used to center alignment horizontally */
+				border-radius:15px;
+				box-shadow:1px 1px 10px red;
+			}	
+			span{
+				color:red;
+				font-size:20px;
+			}
+		</style>
+  </head>
+  <body>				
+		<div>
+			<h3 align="center"><u>Registration Form</u></h3>
+			<form action="registration.jsp">
+				<label>Fullname</label> <span>*</span> <br>
+				<input type="text" id="fna" name="fna" required/> 
+				<br>
+				<label>Email Id</label> <br>
+				<input type="text" id="mid" name="mid"/> 
+				<br>
+				<label>Contact number</label> <span>*</span> <br>
+				<input type="text" id="phone" name="phone" required maxlength="10"/> 
+				<br>
+				<label>Course</label> <span>*</span> <br>
+				<input type="text" id="course" name="course" required/> 
+				<br>
+				<label>Mode of Training</label> <span>*</span> <br>
+				<input type="text" id="mot" name="mot" required/> 
+				<br>
+			    <button>Submit</button>
+			</form>
+		</div>
+  </body>				
+</html>

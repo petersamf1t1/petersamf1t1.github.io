@@ -1,0 +1,26 @@
+<!--
+file control ==> used to upload files
+					use case => uploading resume, kyc, attachments, photos, sign,...
+			Syn:-		<input type="file" .../>
+-->
+<!--  example on "input" tag -->   
+<!DOCTYPE html>
+<html lang="en"> 
+ <head>
+     <title>Ex51</title>
+     <link rel="icon" href="logo.png"/>
+  </head>
+  <body>			
+		<h3>demo on file upload control</h3>	
+		<form id="f" action="https://www.stiename.com/folder/uploadfile.aspx" method="post" enctype="multipart/form-data">		
+			<input type="file" id="f1" name="f1"/> <!-- only 1file, any size & any type file -->
+			<br>
+			<input type="file" id="f2" name="f2" multiple/> <!-- no.of file, any size & any type file -->
+			<br>
+			<input type="file" id="f3" name="f3" accept=".pdf,.docx,.txt"/> <!-- 1file, any size & 3types file -->
+				<!-- accept="image/*"	or  accept="video/*"  or accept="audio/*" or  accept="application/*" -->
+			<br>
+			<input type="submit" name="sb" value="Upload"/>
+		</form>
+  </body>				
+</html>

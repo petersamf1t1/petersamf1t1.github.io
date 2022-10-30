@@ -1,0 +1,63 @@
+<!--
+checkbox ==> used to allow the users to select some option from the list
+							min -> 1		max -> n
+				 ==> it doesn't  any typing
+				Syn:-	<input type="checkbox" .../>
+				==>	all checkbox's name should be same 
+						50 cb => same reason => same name
+						40 cd  => 1que => 10cb => 10 have same name
+										2que => 15cd => 15 have same name
+										3que	=> 15cb => 15 have same
+			==> don't repeat id 
+			==> the deafult value of checkbox is on, its better replace on with own value 
+-->
+<!--  example on "input" tag -->   
+<!DOCTYPE html>
+<html lang="en"> 
+ <head>
+     <title>Ex52</title>
+     <link rel="icon" href="logo.png"/>
+		<style>
+			input{
+				accent-color:red;		/* def color blue or gray */
+			}
+		</style>
+  </head>
+  <body>			
+		<h3>demo on  checkbox</h3>	
+		<form id="f" action="test.jsp">	
+			<label>RAM:</label><br>
+			<input type="checkbox" id="ram1" name="ram" value="12" checked/> <label>12gb&above</label> 
+			<bR>
+			<input type="checkbox" id="ram2" name="ram" value="8"/> <label>8gb</label> <bR>
+			<input type="checkbox" id="ram3" name="ram" value="6"/> <label>6gb</label> <bR>
+			<input type="checkbox" id="ram4" name="ram" value="4"/> <label>4gb</label> <bR>
+			<input type="checkbox" id="ram5" name="ram" value="3"/> <label>3gb</label> <bR>
+			<input type="checkbox" id="ram6" name="ram" value="2"/> <label>2gb&Below</label> 
+			<bR>
+
+			<label>BRAND:</label><br>
+			<input type="checkbox" id="bnd1" name="brand" value="samsung" checked/> <label>Samsung</label> 
+			&nbsp;&nbsp;&nbsp; 
+			<input type="checkbox" id="bnd2" name="brand" value="vivo" checked/> <label>Vivo</label> 
+			&nbsp;&nbsp;&nbsp; 
+			<input type="checkbox" id="bnd3" name="brand" value="apple"/> <label>Apple</label> 
+			&nbsp;&nbsp;&nbsp; 
+			<input type="checkbox" id="bnd4" name="brand" value="mi"/> <label>Mi</label> 
+			&nbsp;&nbsp;&nbsp; 
+			<input type="checkbox" id="bnd5" name="brand" value="one" checked/> <label>OnePlus</label> 
+			<BR> 
+			<input type="checkbox" id="bnd6" name="brand" value="nokia"/> <label>Nokia</label> 
+			&nbsp;&nbsp;&nbsp; 
+			<input type="checkbox" id="bnd7" name="brand" value="real"/> <label>Realme</label> 
+			&nbsp;&nbsp;&nbsp; 
+			<input type="checkbox" id="bnd8" name="brand" value="oppo"/> <label>Oppo</label> 
+			&nbsp;&nbsp;&nbsp; 
+			<input type="checkbox" id="bnd9" name="brand" value="poco"/> <label>Poco</label> 
+			&nbsp;&nbsp;&nbsp; 
+			<input type="checkbox" id="bnd10" name="brand" value="micro"/> <label>Micromax</label> 
+			<br>
+			<input type="submit" name="sb" value="Submit"/>
+		</form>
+  </body>				
+</html>

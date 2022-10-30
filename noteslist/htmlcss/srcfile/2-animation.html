@@ -1,0 +1,34 @@
+<!-- CSS transitions -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<title>Animations</title>
+	<style>
+		div{
+			width:100px;	/* old */
+			height:100px;
+		}
+		 #div1{
+			background:red;
+			transition: width 3s;
+		}
+		#div1:hover{
+			width:600px;	/* new */
+		}
+		#div2{
+			background:blue;
+			transition:height 3s;
+		}
+		#div2:hover{
+			height:600px;	/* new */
+		}
+
+	</style>
+ </head>
+ <body>
+	<div id="div1">Hi</div>
+	<div id="div2">Hello</div>
+	<h3>page end</h3>	
+ </body>
+</html>

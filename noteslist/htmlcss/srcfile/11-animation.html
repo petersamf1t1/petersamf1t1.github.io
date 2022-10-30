@@ -1,0 +1,22 @@
+<!-- CSS animations -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<title>Animations</title>
+	<style>
+		@keyframes moving{
+			from{left:1px; top:10px;}
+			to{left:1300px; top:10px; transform:rotate(360deg);};
+		}
+		img{
+			position:absolute;
+			animation-name:moving;
+			animation-duration:5s;
+		}
+ 	</style>
+ </head>
+ <body>
+	<img src="./images/smile.png"/>
+ </body>
+</html>

@@ -1,0 +1,51 @@
+<!--
+radio button ==> used to allow the users to select only 1 option from the list
+						 ==> it doesn't  any typing
+									Syn:-	<input type="radio" .../>
+						==>	all radio button's name should be same 
+								50 rb => same reason => same name
+								40 rd  => 1que => 10rb => 10 have same name
+												2que => 15rd => 15 have same name
+												3que	=> 15rb => 15 have same
+						==> don't repeat id 
+						==> the deafult value of radio is on, its better replace on with own value 
+-->
+<!--  example on "input" tag -->   
+<!DOCTYPE html>
+<html lang="en"> 
+ <head>
+     <title>Ex53</title>
+     <link rel="icon" href="logo.png"/>
+		<style>
+			input{
+				accent-color:#ff00ff;		/* def color blue or gray */
+			}
+			fieldset{
+				width:600px;
+			}
+		</style>
+  </head>
+  <body>			
+		<h3>demo on  radio buttons</h3>	
+		<form id="f" action="test.jsp">	
+			<fieldset>
+				<legend>Gender</legend>
+				<input type="radio" id="gen1" name="gender" value="m" checked/> <label>Male</label> &nbsp;&nbsp;
+				<input type="radio" id="gen2" name="gender" value="f"/> <label>FeMale</label> &nbsp;&nbsp;
+				<input type="radio" id="gen3" name="gender" value="o"/> <label>Others</label> 
+			</fieldset>
+			<br>
+			<fieldset>
+				<legend>Marital Status:</legend>
+				<input type="radio" id="ms1" name="ms" value="single" checked/> <label>Single</label> &nbsp;&nbsp;
+				<input type="radio" id="ms2" name="ms" value="married"/> <label>Married</label> &nbsp;&nbsp;
+				<input type="radio" id="ms3" name="ms" value="divorced"/> <label>Divorced</label> &nbsp;&nbsp;
+				<input type="radio" id="ms4" name="ms" value="widowed"/> <label>Widowed</label> &nbsp;&nbsp;
+				<input type="radio" id="ms5" name="ms" value="nuns"/> <label>Never married</label> 
+			</fieldset>
+			<br>
+			<!--		<input type="submit" name="sb" value="Submit"/>		OR	-->
+			<button>Submit</button>
+		</form>
+  </body>				
+</html>

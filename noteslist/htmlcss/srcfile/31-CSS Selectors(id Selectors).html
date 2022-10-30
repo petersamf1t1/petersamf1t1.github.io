@@ -1,0 +1,47 @@
+<!--
+ id selector ==> this selector is used to define styles for 1 instance of specific html tag/element
+					 ==> unique style
+				Syn:-		 
+							 #id-name{
+									property:val;
+									property:val;
+									...
+								}
+mapping ==> mapping is nothing informaing to browser which selector related to which tag (linking)
+				 ==> by using "id" attribute we can map 
+			Syn:-	<tag id="id-name">
+
+			Note: > we can map only 1 "id" selector
+					   > we can't apply same "id" selector for multiple tags
+-->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Ex31</title>
+     <link rel="icon" href="logo.png"/>
+	 <style>
+		#head1{
+			color:red;
+		}
+		#head2{
+			color:blue;
+		}
+		#head3{
+			color:green;
+		}
+		#banana{
+			color:yellow;
+		}
+	 </style>
+  </head>
+  <body>
+		<h3>demo on id selector</h3>
+		<h1 id="head1">Apple</h1>
+		<h1 id="head2">Mango</h1>
+ 		<h1 id="head3">Orange</h1>
+		<h1 id="banana">Banana</h1>
+		<!-- invalid coding -->
+  	  <h2 id="head1">Grape</h1>
+	  <h3 id="head1 head2">Hello</h3>
+  </body>					 
+</html>			

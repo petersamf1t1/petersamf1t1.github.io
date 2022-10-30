@@ -1,0 +1,24 @@
+<!--  example on attributes
+attributes ==> used to change existing settings of html elements/tags
+         <tag  attribute="value"  attribute="value" ...>
+					value ==> "  "  or  '   '   or    w/ quotes
+				ringtone ="tring"
+
+event attributes => used to invoke js code from html page
+			onclick, onload, onfocus, onblur, onsubmit, onkeypress, onmousemove,
+			onmouseexit, oncopy, onpaste, oncut, onchange, oncontextmenu, ...
+ -->
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>My 2nd Web page</title>
+		<link rel="icon" href="logo.png"/>
+  </head>
+  <body onload="alert('Welcome to My web site')">
+	<h1 align="center">Hypertext markup language</h1>
+	<!-- left/right/center/justify/top/middle/bottom -->
+	<p align="justify">EDITPLUS IS SOLD "AS IS" AND WITHOUT ANY WARRANTY AS TO MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE OR ANY OTHER WARRANTIES EITHER EXPRESSED OR IMPLIED. THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, DAMAGES, LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING OR MISUSING THIS SOFTWARE.</p>
+	<h1 onclick="alert('Hello')">click here</h1>
+	<h1 ondblclick="document.write('welcome')">click here</h1>
+   </body>
+</html>

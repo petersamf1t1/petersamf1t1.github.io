@@ -1,0 +1,51 @@
+<!-- CSS animations -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<title>Animations</title>
+	<style>
+		@keyframes LTR{
+			from{left:1px; top:5px;}
+			to{left:1300px; top:5px;}
+		}
+		@keyframes RTL{
+			to{left:1px; top:40px;}
+			from{left:1300px; top:40px;}
+		}
+		@keyframes alter{
+			from{left:1px; top:80px;}
+			to{left:1100px; top:80px;}
+		}
+
+		#h1{
+			position:absolute;
+			animation-name:LTR;
+			animation-duration:8s;
+			animation-iteration-count:infinite;
+		}
+		#h2{
+			position:absolute;
+			animation-name:RTL;
+			animation-duration:8s;
+			animation-iteration-count:infinite;
+		}
+		#h3{
+			position:absolute;
+		/*	animation-name:alter;
+			animation-duration:8s;
+			animation-iteration-count:infinite;
+			animation-direction:alternate;
+			animation-delay:3s;	*/
+			animation: alter 8s linear 3s infinite alternate;
+		}
+ 	</style>
+ </head>
+ <body>
+		<div >
+			<h1 id="h1" >Naresh <em>i</em> Tech</h1>
+			<h1 id="h2">Ameerpet</h1>
+			<h1 id="h3">Software Training Center</h1>
+		</div>
+ </body>
+</html>

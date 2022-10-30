@@ -1,0 +1,75 @@
+<!--  hmtl lists
+			=> ol	
+			=> ul
+ol tag ==> Ordered List
+			==> this tag used to print the data in points wise
+			==> it sup to print data with numbering
+			==> it sup 5 types numbers, those are	  1, 2, 3, ...		(its defualt)
+																					   A, B, C, ...
+																						a, b, c, ...
+																						i, ii, iii, ...
+																						I, II, III, ...
+			==> its paired tag & block level
+			==> its parent tag of "li" tag
+			==> li stands for "list item"
+			==> li tag used to print data
+			==> li is paired tag & block level tag
+			==> li is child of ol tag
+	Syn:-		<ol>
+							<li>text</li>
+							<li>text</li>
+							...
+					</ol>
+-->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Ex20</title>
+     <link rel="icon" href="logo.png"/>
+  </head>
+  <body>
+		<h3>demo on numbering</h3>
+
+		<H4>How do I make a payment using Flipkart's credit card EMI option?</H4>
+		<ol>
+			<li>Choose your credit-card issuing bank you wish to pay from</li>
+			<li>Select the EMI plan of your preference</li>
+			<li>Enter your credit card details</li>
+		    <LI>Click 'Save and Pay'</LI>
+		</ol>
+		<HR/>  <!-- this tag used to draw a line horizontally -->		
+		
+		<h4>The following banks supports Flipkart's credit card EMI option:</h4>
+		<ol type="A" start="52" reversed>
+			<li>HDFC</li>
+			<li>Citi</li>
+			<li>ICICI</li>
+			<li>Kotak</li>
+			<li>Axis</li>
+			<li>IndusInd</li>
+			<li>SBI</li>
+			<li>Standard Chartered</li>
+			<li>HSBC</li>
+		</ol>
+		<hr/>
+		<!-- nested list -->
+		<h4>List Of Cars</h4>
+		<ol style="color:#ff0033;">		<!-- main list -->
+			<li>Tata Cars</li>
+					<ol type="i" style="color:#3300ff;">	<!-- sub list -->
+						<li>Tata Nexon &#8377;7.59 Lakh</li>
+						<li>Tata Punch &#8377;5.93 Lak</li>
+						<li>Tata Altroz &#8377;6.29 Lakh</li>
+						<li>Tata Harrier &#8377;14.69 Lakh</li>
+					</ol>
+			<li>Hyundai Cars</li>
+					<ol TYPE="i" style="color:#3300ff;">	<!-- sub list -->
+						<li>Hyundai Venue &#8377;7.53 Lakh</li>
+						<li>Hyundai Creta &#8377;10.44 Lakh</li>
+						<li>Hyundai Grand &#8377;i10 Nios 5.42 Lakh</li>
+						<li>Hyundai i20 &#8377;7.70 Lakh</li>
+						<li>Hyundai Tucson &#8377;27.70 Lakh</li>
+					</ol>
+		</ol>
+  </body>			
+</html>

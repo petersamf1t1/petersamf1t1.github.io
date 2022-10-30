@@ -1,0 +1,39 @@
+<!-- display property
+	inline ==> this option used to display block level elements side-by-side (like as inline elements)
+							block tag => inline tag
+				Syn:-	display:inline;
+
+	block ==> this option used to display inline elements line-by-line (like as block level elements)
+							inline tag => block tag
+				Syn:-	display:block;
+
+	none ==> this option used to hide html elements, means we are designing tag but  its not displaying on web page
+			Syn:-	display:none;
+-->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Ex28</title>
+     <link rel="icon" href="logo.png"/>
+  </head>
+  <body>
+		<img src="images/rose.png"/>
+		<!-- block into inline -->
+		<h1 style="display:inline;">hello world</h1>
+		<h1 style="display:inline;">welcome</h1>
+		<br>
+		<!-- inline into block -->
+		<label style="display:block; background:cyan;">Username</label>
+		<label style="display:block; background:yellow;">Password</label>
+		<bR>
+
+		<!-- hiding element -->
+		<button onclick="document.getElementById('d').style.display='block'">Show</button> &nbsp;&nbsp;&nbsp; 
+		<button onclick="document.getElementById('d').style.display='none'">Hide</button> 
+		<div style="display:block;" id="d">
+			<h1 >Green Apple</h1>
+			<h1>Yellow Mango</h1>
+			<h2>black Grape</h2>
+		</div>
+  </body>					 
+</html>

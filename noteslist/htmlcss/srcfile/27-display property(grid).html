@@ -1,0 +1,53 @@
+<!-- display property
+	 grid ==> this option used to display html elements in row and column format (tabler format)
+			Syn:-	display:grid;
+							1. def is 1col X n-rows
+							2. fixed size
+										BW 1000px ==> 4cols => 250px
+							3. no space
+
+	grid-template-columns ==> this prop used to specify no.of columns & width of column
+					Syn:-		grid-template-columns: col1 col2 col3...;
+												:auto auto auto	==> 3cols, BW or CW/no.of cols
+												:20% 30%	==> 2cols,
+															1st col => BW or CW*20/100
+															2nd col => BW or CW*30/100
+												:250px  300px 400px
+
+	column-gap ==> this prop used to provide space between 1 column to another column
+				Syn:-		column-gap:Npx;
+
+	row-gap ==> this prop used to provide space between 1 row to another row
+				Syn:-		row-gap:Npx;
+
+	grid-gap ==> this prop used to provide space between row to row and column to column 
+				Syn:-		grid-gap:Npx;
+								grid-gap:Rpx  Cpx;
+-->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Ex27</title>
+     <link rel="icon" href="logo.png"/>
+  </head>
+  <body>
+		<h3>demo on grid</h3>
+
+		<!-- main container -->
+		<div style="font-size:30px; display:grid; grid-template-columns:auto auto auto; grid-gap:40px 20px;">	
+			<!-- sub  containers -->
+			<div style="background:#ff99ff;">January</div>  
+			<div style="background:#00ffff;">February</div> 
+			<div style="background:#ffff66;">March</div> 
+			<div style="background:#99ff33;">April</div> 
+			<div style="background:#ff99ff;">May</div>  
+			<div style="background:#00ffff;">June</div> 
+			<div style="background:#ffff66;">July</div> 
+			<div style="background:#99ff33;">August</div> 
+			<div style="background:#ff99ff;">September</div>  
+			<div style="background:#00ffff;">October</div> 
+			<div style="background:#ffff66;">November</div> 
+			<div style="background:#99ff33;">December</div> 	
+		</div>
+  </body>			
+</html>

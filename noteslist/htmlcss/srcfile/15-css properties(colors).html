@@ -1,0 +1,44 @@
+<!--  css properties
+	color ==> css prop, used to change color of text/data (foreground color)
+		      ==> this use with any html tag
+		Syn:-		color: color-spe;
+
+	background-color ==> css prop, used to change the background color of html tag
+									  ==> this use with any html tag
+		Syn:-		background-color: color-spe;
+
+  we can specify colors in 3 ways, those are:
+			1. color names ==> red,  yellow, pink, cyan ...
+
+			2. rgb combination ==>   by using a predefine function rgb()
+								Syn:		rgb(red, green, blue)
+												min => 0		max=> 255
+
+			3. color constants ==> css providing predefine constant for every color
+							red		=>	 #ff0000
+							blue   =>    #0000ff
+							green =>	#00ff00
+							black => #000000
+							white	=> #ffffff
+		hexdecimal color code
+				0,1,2,3,4,5,6,7,8,9a,b,c,d,e,f
+		16 mi colors
+ example on  colors  -->
+<!DOCTYPE html>
+<html lang="eg">
+ <head>
+     <title>Ex15</title>
+     <link rel="icon" href="logo.png"/>
+ </head>
+ <body style="background-color:#ffcc99;">
+		<!-- named colors -->
+		<h1 style="color:yellow; background-color:blue;">Hypertext Markup Language</h1>
+		<label style="color:white; background-color:red;">Cascading Style Sheets</label>
+		<!-- rgb colors-->
+		<h2 style="background-color:rgb(30,24,1); color:rgb(100,250,199);">JavaScript</h2>
+		<span  style="background-color:rgb(100,250,199); color:rgb(30,24,99);">BootStrap</span>
+		<!-- hexdec colors -->
+		<h3 style="background-color:#112233; color:#ab78ef;">AngularJS</h3>
+		<a href="" style="color:#99ff01; background-color:#c2c2c2;"> ContactUs </a>
+ </body>			
+</html>

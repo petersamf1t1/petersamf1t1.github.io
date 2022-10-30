@@ -1,0 +1,79 @@
+<!-- example on css tables -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Ex39</title>
+     <link rel="icon" href="logo.png"/>
+	  <style>
+		    img{
+				width:20px;
+				height:20px;
+			}
+			table{
+				width:600px;
+				font-size:20px;
+				border-collapse:collapse; 
+			}
+			caption{
+				font-size:26px;
+				text-align:left;
+			}
+			tr{
+				border-bottom:1px solid yellow;
+			}
+			tr:nth-child(odd){
+				background:#0033ff;
+				color:white;
+			}
+			tr:nth-child(even){
+				background:#00ccff;
+			}
+			tr:first-child{
+				background:red;
+				color:white;
+			}
+			tr:hover{
+				background:black;
+				color:white;
+			}
+	  </style>
+ </head>
+ <body>
+ 	<table align="center">
+	  <caption>IPL 2022 Points Table</caption>
+	  <tr>
+		<th>POS</th> <th>TEAM</th> <th>MATCHES</th> <th>WON</th> <th>LOST</th> <th>PTS</th> <th>NRR</th> 
+	  </tr>
+	  <tr>
+		<td>1</td> <td><img src="https://ssl.gstatic.com/onebox/media/sports/logos/24uPDj4LAP1wpSEGHZWRDQ_48x48.png"/>Titans</td> <td>14</td> <td>10</td> <td>4</td> <td>20</td> <td>+0.316</td>
+	  </tr>
+	  <tr>
+		<td>2</td> <td><img src="https://ssl.gstatic.com/onebox/media/sports/logos/turpQqyPRIMvuksLiSDSjQ_48x48.png"/>Royals</td> <td>14</td> <td>9</td> <td>5</td> <td>18</td> <td>+0.298</td>
+	  </tr>
+	  <tr>
+		<td>3</td> <td><img src="https://ssl.gstatic.com/onebox/media/sports/logos/b6uyRF-RX56muhQOv1-Z3A_48x48.png"/>Super Giants</td> <td>14</td> <td>9</td> <td>5</td> <td>18</td> <td>+0.251</td>
+	  </tr>
+	  <tr>
+		<td>4</td> <td><img src="https://ssl.gstatic.com/onebox/media/sports/logos/f958HPOsI1ugsHmwc4piCw_48x48.png"/>Royal Challengers</td> <td>14</td> <td>8</td> <td>6</td> <td>16</td> <td>-0.253</td>
+	  </tr>
+	  <tr>
+		<td>5</td> <td><img src="https://ssl.gstatic.com/onebox/media/sports/logos/TjudW-BaNE2HcD_6cOWC7Q_48x48.png"/>Capitals</td> <td>14</td> <td>7</td> <td>7</td> <td>14</td> <td>+0.204</td>
+	  </tr>
+	  <tr>
+		<td>6</td> <td><img src="https://ssl.gstatic.com/onebox/media/sports/logos/HxbhoKfAgDZogey6S9E4bA_48x48.png"/>Kings</td> <td>14</td> <td>7</td> <td>7</td> <td>14</td> <td>+0.126</td>
+	  </tr>
+	  <tr>
+		<td>7</td> <td><img src="https://ssl.gstatic.com/onebox/media/sports/logos/kkwGQB9t8WtGPx9WuiBGOw_48x48.png"/>Knight Riders</td> <td>14</td> <td>6</td> <td>8</td> <td>12</td> <td>+0.146</td>
+	  </tr>
+	  <tr>
+		<td>8</td> <td><img src="https://ssl.gstatic.com/onebox/media/sports/logos/G9q07ZXPVbPkXOagStz3Yw_48x48.png"/>Sunrisers</td> <td>14</td> <td>6</td> <td>8</td> <td>12</td> <td>-0.379</td>
+	  </tr>
+	  <tr>
+		<td>9</td> <td><img src="https://ssl.gstatic.com/onebox/media/sports/logos/exZiFUT_GXScTyr358t7SQ_48x48.png"/>Super Kings</td> <td>14</td> <td>4</td> <td>10</td> <td>8</td> <td>-0.203</td>
+	  </tr>
+	  <tr>
+		<td>10</td> <td><img src="https://ssl.gstatic.com/onebox/media/sports/logos/JTre94vh6WJeLmIL-Dfc1g_48x48.png"/>Indians</td> <td>14</td> <td>4</td> <td>10</td> <td>8</td> <td>-0.506</td>
+	  </tr>
+	</table>
+ </body>
+</html>

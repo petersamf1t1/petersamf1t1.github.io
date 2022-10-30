@@ -1,0 +1,67 @@
+<!--
+pseudo selector
+  ==> pseudo classes
+  ==> these are predefine selector
+   list:  hover, first-child, last-child, nth-child, focus, blur, link, active, visited
+  ==>  : symbol is prefix for all pseudo class
+
+first-child ==> used to define styles for 1st positioned child tag
+		Syn:-	tag/id/class:first-child{
+					prop:val;
+					prop:val;
+					...
+				}
+
+last-child ==> used to define styles for last positioned child tag
+		Syn:-	tag/id/class:last-child{
+					prop:val;
+					prop:val;
+					...
+				}
+
+nth-child ==> used to define styles for nth positioned child tag
+		Syn:-	tag/id/class:nth-child(POS/even/odd){
+					prop:val;
+					prop:val;
+					...
+				}
+				POS => specific child
+				even => all even positioned childs
+				odd => all odd positioned childs
+
+hover ==> hand over
+			==> used to apply styles on html elements, whenever mouse pointers comes over the tag
+		Syn:-		tag/id/class:hover{
+						prop:val;
+						prop:val;
+						...
+					}
+ example on pseudo selectors  -->
+
+ <!DOCTYPE html>
+<html lang="en">
+ <head>
+   <title>Ex38</title>
+   <link rel="icon" href="logo.png"/>
+	<style>
+		li:first-child{
+			color:red;
+		}
+		li:last-child{
+			color:blue;
+		}	
+		li:nth-child(even){
+			color:green;
+		}	
+		li:hover{
+			color:#ff00ff;
+		}
+	</style>
+ </head>
+ <body>
+	<ol>
+		<li>Samsung</li> <li>Google</li> <li>Oracle</li> <li>Microsoft</li> 
+		<li>ADP</li> <li>CA</li> <li>Cisco</li> <li>Apple</li>
+	</ol>
+ </body>
+</html>

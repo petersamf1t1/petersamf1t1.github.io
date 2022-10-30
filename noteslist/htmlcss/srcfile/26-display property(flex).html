@@ -1,0 +1,52 @@
+<!-- display property
+			display => flex, grid, block, inline, inline-block, none
+
+	 flex ==> flexable
+	     ==> this option used to display html elements either in row format or column 
+	format
+			Syn:-	display:flex;
+							1. def is row format
+							2. auto size, means based on content/data
+							3. no space
+							4. with out wrapping
+
+	flex-direction ==> this prop used to change alignment of html elements
+						Syn:-	flex-direction: row/row-reverse/column/column-reverse;
+
+	gap ==> this prop used to provide some space between one tag to another tag
+						Syn:-	gap:Npx;
+
+	flex-wrap ==> this prop used to apply wraping mode 
+						==> if wrap is actived elements flow continues to next line
+						==> if wrap is not actived elements are displaying in single line
+						Syn:-	flex-wrap:nowrap/wrap;
+-->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Ex26</title>
+     <link rel="icon" href="logo1.png"/>
+  </head>
+  <body>
+		<h3>demo on flex</h3>
+
+		<div style="display:flex; flex-direction:row; gap:20px; flex-wrap:wrap; font-size:26px;">	<!-- main container -->
+			<!-- sub  ontainers -->
+			<div style="background:#ff99ff;">Sivakumar</div>  
+			<div style="background:#00ffff;">Naveen</div> 
+			<div style="background:#ffff66;">SakshamJain</div> 
+			<div style="background:#99ff33;">Suhail</div> 
+			<div style="background:#ff99ff;">Aswini</div>  
+			<div style="background:#00ffff;">Praveen</div> 
+			<div style="background:#ffff66;">Prasad</div> 
+			<div style="background:#99ff33;">Vanitha</div> 
+			<div style="background:#ff99ff;">RamKrishna</div>  
+			<div style="background:#00ffff;">Naresh</div> 
+			<div style="background:#ffff66;">Pratibha</div> 
+			<div style="background:#99ff33;">Manish</div>
+			<div style="background:#ff99ff;">Sohil</div>  
+			<div style="background:#00ffff;">Rutuja</div>  
+			<div style="background:#99ff33;">Srinivas</div>
+		</div>
+  </body>			
+</html>

@@ -1,0 +1,26 @@
+<!--
+   buttons ==> reset, submit, image
+reset button ==> this button used to clear input fields (values)
+						==> cases filter, application forms
+						==> input fields (which we want to clear) & reset button should with in the same "form" tag
+					Syn:-		<input type="reset" .../>						
+	Note:  reset button details are not sending to server
+-->
+<!--  example on "input" tag -->   
+<!DOCTYPE html>
+<html lang="en"> 
+ <head>
+     <title>Ex46</title>
+     <link rel="icon" href="logo.png"/>
+  </head>
+  <body>			
+		<h3>demo on reset button </h3>	
+		<form>
+			<input type="text"/> <bR>
+			<input type="number"/> <bR>
+			<input type="password"/> <bR>
+			<input type="reset" value="Clear All"/>
+		</form>
+			<input type="text"/> <!-- its not cleared -->
+  </body>				
+</html>

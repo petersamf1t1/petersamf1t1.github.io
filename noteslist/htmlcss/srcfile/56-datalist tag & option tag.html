@@ -1,0 +1,35 @@
+<!--
+datalist ==> used for creating seachbox
+						a search box is comb of text field & datalist
+				==> datalist is displaying when we type something in textbox or when we click on textbox
+				==> datalist tag paired tag
+		Syn:-	<datalist>
+							<option>text</option>
+							<option>text</option>
+							....
+					</datalist>
+Note: we should map datalist to textbox	-->
+	
+<!--  example on   datalist & option tags -->   
+<!DOCTYPE html>
+<html lang="en"> 
+ <head>
+     <title>Ex56</title>
+     <link rel="icon" href="logo.png"/>
+  </head>
+  <body>			
+		<h3>demo on  search box</h3>	
+		<input type="text" list="mylist"/>
+		<datalist id="mylist" name="mylist">
+			<option>Red Apple</option>
+			<option>White Apple</option>
+			<option>Green Apple</option>
+			<option value="Yellow Mango"/>
+			<option value="Green Mango"/>
+			<option value="Green Banana"/>
+			<option value="Yellow Banana"/>
+			<option value="BLACK GRAPE">Black Grape</option>
+			<option value="WHITE GRAPE">White Grape</option>
+		</datalist>
+  </body>				
+</html>

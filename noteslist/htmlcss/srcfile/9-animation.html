@@ -1,0 +1,30 @@
+<!-- CSS animations -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<title>Animations</title>
+	<style>
+		@keyframes myanim{
+			from{color:green;}
+			to{color:red;}
+		}
+		.c{
+			animation-name:myanim;
+			animation-duration:2s;
+			animation-iteration-count:infinite;
+			animation-direction:alternate;
+		}
+		button:hover{
+			animation-name:myanim;
+			animation-duration:600ms;
+		}
+	</style>
+ </head>
+ <body>
+		<h1 class="c" align="center">Hello World</h1>
+		<h2 class="c" align="center">Welcome</h2>
+		<button>Submit</button>
+
+ </body>
+</html>

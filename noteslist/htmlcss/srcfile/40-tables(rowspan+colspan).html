@@ -1,0 +1,48 @@
+<!-- example on tables 
+  colspan ==> used to mearge multiple columns into single col
+		  ==> displaying common heading or common data for column
+		  ==> th or td
+
+  rowspan ==> used to mearge multiple rwos into single row
+		  ==> displaying common data for rows
+		  ==> td
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Ex40</title>
+	<link rel="icon" href="logo.png"/>
+  </head>
+  <body>
+	<h3>demo on colspan & rowspan</h3>
+ 	<table border>
+	  <tr>
+		<th>State</th> <th>District</th> <th colspan="2">Population</th> 		<th>Increase</th>
+	 </tr>
+	  <tr>
+		<td rowspan="5">Andhra Pradesh</td> <td>East Godavari</td> <td>4,154,296</td> <td>5,154,296</td> <td>5.16%</td>
+	  </tr>
+	  <tr>
+							<td>Guntur</td> <td colspan="2" align="center">4,887,813</td>  <td>9.16%</td>
+	  </tr>
+	  <tr>
+						 <td>Krishna</td> <td>3,517,398</td> <td>4,517,398</td> <td>7.87%</td>
+	  </tr>
+	  <tr>
+						<td>Visakhapatnam</td> <td>3,290,589</td> <td>4,290,589</td> <td>7.87%</td>
+	  </tr>
+	  <tr>
+						<td>Chittoor</td> <td>4,174,064</td> <td>4,174,064</td> <td>11.43%</td>
+	  </tr>
+	  <tr>
+		<td rowspan="3">Maharashtra</td> <td>Thane</td> <td>10,060,148</td> <td>11,060,148</td> <td>36.43%</td>
+	  </tr>
+	  <tr>
+				<td>Pune</td> <td>8,429,408</td> <td>9,429,408</td> <td>30.37%</td>
+	  </tr>
+	  <tr>
+				<td>Nashik</td> <td>6,107,187</td> <td>6,107,187</td> <td>22.37%</td>
+	  </tr>
+	</table>
+  </body>	
+</html>

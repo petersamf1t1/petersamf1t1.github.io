@@ -1,0 +1,43 @@
+<!--
+ class  selector ==> this selector is used to define common styles for multiple instances of a specific html tag/element
+							==> this selector is used to define common styles for multiple html tags/elements
+				Syn:-		 
+							 .class-name{
+									property:val;
+									property:val;
+									...
+								}				
+mapping  ==> by using "class" attribute we can map 
+			Syn:-	<tag  class="class-name">
+
+			Note: > we can map only no.of "class" selectors to same tag
+					   > we can apply same "class" selector for multiple tags
+-->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Ex32</title>
+     <link rel="icon" href="logo.png"/>
+	 <style>
+		.c1{
+		color:red;
+		}
+		.c2{
+		color:blue;
+		}
+	 </style>
+  </head>
+  <body>
+		<h3>demo on class selector</h3>
+		<h1 class="c1">Apple</h1>
+		<h1 class="c1">Mango</h1>
+ 		<h1 class="c1">Orange</h1>
+		<h1 class="c2">Banana</h1>
+		<h1 class="c2">Grape</h1>
+
+		<h1 class="c2">Microsoft</h1>
+		<h2 class="c2">Oracle</h2>
+		<h3 class="c2">SAP</h3>
+		<p class="c2">Google</p>
+  </body>					 
+</html>

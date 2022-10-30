@@ -1,0 +1,25 @@
+<!--  gradient colors
+css supports 2 types gradient, those are		1. linear   2. radial
+
+linear-gradient ==> this function used to apply mulitple colors as background for html elements
+							==> by using a predefine function linear-gradient()
+				Syn:- linear-gradient(dir, color1, color2, color3, ...)
+						dir => to left, to right,		to top, to bottom
+										vertical							horizontal
+Note: while working with gradients use "background" prop inplace of "background-color" prop
+-->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Ex18</title>
+     <link rel="icon" href="logo.png"/>
+  </head>
+  <body style="background: linear-gradient(to left, #ff00ff, #3300ff);">
+		<h3>demo on gradient</h1>
+		<p style="background: linear-gradient(to top, #33ff00 ,#ffff00, #33ffff);">EDITPLUS IS SOLD "AS IS" AND WITHOUT ANY WARRANTY AS TO MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE OR ANY OTHER WARRANTIES EITHER EXPRESSED OR IMPLIED. THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, DAMAGES, LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING OR MISUSING THIS SOFTWARE.</p>
+
+	<p style="background: linear-gradient(to right, #ff0000 30%, #3399ff 70%);">EDITPLUS IS SOLD "AS IS" AND WITHOUT ANY WARRANTY AS TO MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE OR ANY OTHER WARRANTIES EITHER EXPRESSED OR IMPLIED. THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, DAMAGES, LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING OR MISUSING THIS SOFTWARE.</p>
+
+	<p style="background: linear-gradient(135deg, #ffcc00 , #cc33ff);">EDITPLUS IS SOLD "AS IS" AND WITHOUT ANY WARRANTY AS TO MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE OR ANY OTHER WARRANTIES EITHER EXPRESSED OR IMPLIED. THE AUTHOR WILL NOT BE LIABLE FOR DATA LOSS, DAMAGES, LOSS OF PROFITS OR ANY OTHER KIND OF LOSS WHILE USING OR MISUSING THIS SOFTWARE.</p>
+  </body>			
+</html>

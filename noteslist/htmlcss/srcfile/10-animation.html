@@ -1,0 +1,25 @@
+<!-- CSS animations -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<title>Animations</title>
+	<style>
+		@keyframes moving{
+			0%{left:5px; top:5px;}
+			30%{left:1200px; top:600px;}
+			60%{left:1200px; top:5px;}
+			80%{left:5px; top:600px;}
+			100%{left:50%; top:50%;}
+		}
+		img{
+			position:absolute;
+			animation-name:moving;
+			animation-duration:10s;
+		}
+ 	</style>
+ </head>
+ <body>
+	<img src="./images/smile.png"/>
+ </body>
+</html>

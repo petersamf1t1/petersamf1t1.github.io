@@ -1,0 +1,50 @@
+<!-- example on fieldset &  legend tags
+==> fieldset tag used to draw a common border for multiple html elements/tags
+==> legend tag used to set title for fieldset 
+==> fieldset is parent tag & legend is child tag
+==> both are paired tags & block level tags
+	Syn:-		<fieldset>
+							<legend>text</legend>
+						    content...
+					</fieldset>
+-->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Ex23</title>
+     <link rel="icon" href="logo.png"/>
+		<style>
+			img{
+				width:250px;
+				height:250px;
+				border-radius:20px;
+			}
+			legend{
+				color:#3300cc;
+				font-size:34px;		/* this prop used to change text size of any html tag */
+				font-family:Forte,Arial;	/* this prop used to change text writing style of any html tag */
+			}
+		</style>
+  </head>
+  <body>
+		<h3>demo on fieldset & legend</h3>
+		<fieldset>
+			<h1>Samsung</h1>
+			<h1>LG</h1>
+			<h2>Sony</h2>	 
+		</fieldset>
+		<br>
+
+		<fieldset style="border:15px solid red;" align="center">
+			<legend>My Photos</legend>
+			<img src="images/water.jfif"/>
+			<img src="images/rose.png"/>
+			<img src="images/tenor.gif"/>
+			<img src="images/tree.jpg"/>
+			<img src="images/hdfcposter.png"/>
+			<img src="images/hdfcposter2.png"/>
+			<img src="images/animal.jpg"/>
+			<img src="images/mob.jpg"/>
+		</fieldset>
+  </body>			
+</html>

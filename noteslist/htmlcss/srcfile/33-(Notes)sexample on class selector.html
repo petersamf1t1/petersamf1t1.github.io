@@ -1,0 +1,35 @@
+<!-- example on class selector -->
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title>Ex33</title>
+     <link rel="icon" href="logo.png"/>
+		<style>
+			.t1{
+				color:red;
+				text-align:center;
+			}
+			.t2{
+				background:blue;
+				width:50%;
+			}
+			.t3{
+				border:5px solid yellow;
+			}
+			.t4{
+				color:green;
+			}
+		</style>
+  </head>
+  <body>
+		<h3>demo on class selector</h3>
+		<h1 class="t1   t2  t3">Ananth</h1>
+	
+		<h1 class="t4 t1">Naresh i Tech</h1>
+		<!-- here we have repeated properties in 2 classes, hence browser overwriting those properties. 
+			finally t4 applying on tag, bcz t4 is last declared in order 
+		***Actually what is the last statement written in css that's gonna applied on html tags when you override any tags in mapping.
+		-->
+		<p class="t1" style="font-size: 50px;">Actually what is the last statement written in css that's gonna applied on html tags when you override any tags in html mapping.</p>
+  </body>					 
+</html>
