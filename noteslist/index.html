@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./assets/css/autoindex.css" />
+		<script src="./assets/js/tablesort.js"></script>
+		<script src="./assets/js/tablesort.number.js"></script>
+		<title>Index of /Notes</title>
+	</head>
+<body>
+	<div class="content">
+		<h1>Index of /Notes</h1>
+		<div id="table-filter">
+		<input type="text" name="keyword" id="filter-keyword" placeholder="Filter Name Search">
+	</div>
+	<div id="table-list">
+	<table id="table-content">
+		<thead class="t-header">
+			<tr>
+				<th class="colname" aria-sort="ascending">
+					<a class="name" href="?ND"  onclick="return false"">Name</a>
+				</th>
+			</tr>
+		</thead>
+	<tr data-sort-method="none">
+		<td>
+			<a href="/">
+			<img class="icon" src="./assets/icons/corner-left-up.svg" alt="Up">Go Back To Home</a>
+		</td>
+	</tr>
+	<tr>
+		<td >
+			<a href="./htmlcss/index.html">
+			<img class="icon" src="./assets/icons/folder-fill.svg" alt="Directory">HTML</a>
+		</td>
+	</tr>
+	<tr>
+		<td >
+			<a href="./htmlcss/index.html">
+			<img class="icon" src="./assets/icons/folder-fill.svg" alt="Directory">CSS</a>
+		</td>
+	</tr>
+	<tr>
+		<td >
+			<a href="./javascript/index.html">
+				<img class="icon" src="./assets/icons/folder-fill.svg" alt="Directory">JavaScript</a>
+			</td>
+		</tr>
+	<tr>
+		<td >
+			<a href="./javase/index.html">
+				<img class="icon" src="./assets/icons/folder-fill.svg" alt="Directory">JAVA SE ( Core )</a>
+			</td>
+		</tr>
+	<tr>
+		<td >
+			<a href="./javaee/index.html">
+				<img class="icon" src="./assets/icons/folder-fill.svg" alt="Directory">JAVA EE ( Advance )</a>
+			</td>
+		</tr>
+	<tr>
+		<td >
+			<a href="./oracle/index.html">
+				<img class="icon" src="./assets/icons/folder-fill.svg" alt="Directory">Oracle</a>
+			</td>
+		</tr>
+	</table>
+</div>
+</div>
+<script>
+	new Tablesort(document.getElementById("table-content"));
+	var keywordInput = document.getElementById('filter-keyword');
+	document.addEventListener('keyup', filterTable);
+
+	function filterTable(e) {
+		if (e.target.id != 'filter-keyword') return;
+
+		var cols = document.querySelectorAll('tbody td:first-child');
+		var keyword = keywordInput.value.toLowerCase();
+		for (i = 0; i < cols.length; i++) {
+			var text = cols[i].textContent.toLowerCase();
+			if (text != 'parent directory') {
+				cols[i].parentNode.style.display = text.indexOf(keyword) === -1 ? 'none' : 'table-row';
+			}
+		}
+	}
+</script>
+</body>
+</html>
